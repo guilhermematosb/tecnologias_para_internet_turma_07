@@ -1,0 +1,63 @@
+<!--   
+  Solicite 2 números, faça a soma deles e apresente o resultado final ao usuário
+-->
+
+<!--
+  Vamos criar uma interface HTML simples para a calculadora, utilizando botões e campos de entrada.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculadora">
+    <h1>Calculadora Simples</h1>
+
+    <input type="number" id="numberOne" placeholder="Digite o primeiro número" />
+    <input type="number" id="numberTwo" placeholder="Digite o segundo número" />
+
+    <select id="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <button onclick="">Calcular</button>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+  Explicação do Código
+HTML
+    Estrutura Básica: A estrutura básica HTML inclui o título, os campos de entrada para os números, 
+    um seletor de operação, um botão para calcular e um parágrafo para exibir o resultado.
+    Campos de Entrada: Dois campos de entrada (input) do tipo number para os números.
+    Seletor de Operação: Um select com opções para cada operação (+, -, *, /).
+    Botão de Calcular: Um botão que chama a função calcular quando clicado.
+    Parágrafo para Resultado: Um parágrafo (p) para exibir o resultado.
+
+CSS
+    Estilização Básica: Estiliza a calculadora para que ela fique centralizada na tela, com um design simples e limpo.
+    Estilo para Campos e Botões: Define estilos para os campos de entrada, seletor e botão para melhorar a aparência e usabilidade.
+
+JavaScript
+    Função calcular:
+        Obtendo Valores: Obtém os valores dos campos de entrada e do seletor.
+        Validação: Verifica se os valores são números válidos.
+        Cálculo: Realiza a operação escolhida usando um switch.
+        Exibindo Resultado: Exibe o resultado no parágrafo ou uma mensagem de erro se a entrada for inválida ou houver uma tentativa de divisão por zero.
+ -->
