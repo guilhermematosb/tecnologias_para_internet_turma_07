@@ -1,10 +1,10 @@
 // Seleciona o elemento com o ID "caixa-lista-ordenada"
 let elementoPai = document.querySelector("#caixa-lista-ordenada");
-console.log(elementoPai);
+// console.log(elementoPai);
 
 // Seleciona o elemento <ul> dentro do elemento pai
 let elementoUl = elementoPai.querySelector("ul");
-console.log(elementoUl);
+// console.log(elementoUl);
 
 // Cria dois novos elementos <span>
 let elementoSpan1 = document.createElement("span");
@@ -15,10 +15,10 @@ elementoSpan1.innerText = "span 1 adicionado";
 elementoSpan2.innerText = "span 2 adicionado";
 
 // Adiciona o elemento <span> após o elemento <ul>
-elementoUl.after(elementoSpan1);
+// elementoUl.after(elementoSpan1);
 
 // Adiciona o elemento <span> antes do elemento <ul>
-elementoUl.before(elementoSpan2);
+// elementoUl.before(elementoSpan2);
 
 // Cria um novo elemento <ul>
 let novoUl = document.createElement("ul");
