@@ -37,16 +37,11 @@ public class PrimeiraController {
 
     @PostMapping("quintoMetodo")
     public String quintoMetodo(@RequestBody Usuario usuario) {
-        return usuario.username();
+        return usuario.getUserName();
     }
 
     @PostMapping("sextoMetodo")
     public String sextoMetodo(@RequestHeader Map<String, String> headers) {
         return "Metodo RequestHeader" + headers.entrySet();
     }
-    
-    /**
-     * InnerPrimeiraController
-     */
-    record Usuario(String username) {}
 }
