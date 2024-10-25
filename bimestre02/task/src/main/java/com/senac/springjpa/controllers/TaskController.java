@@ -30,7 +30,7 @@ public class TaskController {
     }
 
     @GetMapping("/{title}")
-    public ResponseEntity<TaskEntity> getTaskById(@PathVariable String title) {
+    public ResponseEntity<TaskEntity> getTaskByTitle(@PathVariable String title) {
         Optional<TaskEntity> optionalTask = taskRepository.findByTitle(title);
         return optionalTask.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
