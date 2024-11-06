@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#adicionar-tarefa">Adicionar Tarefa</a></li>
+                <li><a href="#lista-tarefas">Lista de Tarefas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="adicionar-tarefa" class="content-section">
+            <h1>Adicionar Tarefa</h1>
+            <form id="form-tarefa">
+                <input type="text" id="nome-tarefa" placeholder="Nome da Tarefa">
+                <button type="submit">Adicionar</button>
+            </form>
+            <div id="mensagem-erro"></div>
+        </section>
+
+        <section id="lista-tarefas" class="content-section">
+            <h1>Lista de Tarefas</h1>
+            <input type="text" id="filtro-tarefa" placeholder="Filtrar Tarefas">
+            <ul id="tarefas"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
